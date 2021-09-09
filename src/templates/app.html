@@ -1,0 +1,22 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Star Wars Explorer</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://unpkg.com/tailwindcss@2.2.11/dist/tailwind.min.css" rel="stylesheet">
+    <script src="https://unpkg.com/vue@3.2.9/dist/vue.global.js"></script>
+    <script src="https://unpkg.com/vue-router@4.0.5/dist/vue-router.global.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wretch/1.7.6/wretch.js" integrity="sha512-1NgOIyY5wyBdLJDe9h2Qrzom9cPLTtGa9GQAH2I6HGxvhMLQH+zNYVL1CUnsby1ho1im5+7RDNftK26D/v8jag==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body class="bg-gray-100 font-sans">
+    <div id="app" class="container mx-auto mt-10 bg-white rounded p-4">Loading</div>
+    <script type="module" src="{% static 'main.js' %}"></script>
+  </body>
+  <style>
+    .container {
+      min-width: 1080px;
+    }
+  </style>
+</html>
