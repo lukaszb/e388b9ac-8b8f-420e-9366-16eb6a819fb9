@@ -7,4 +7,8 @@ Run with docker:
 For local development:
 
     python -m venv .venv --prompt swheros
-    soruce .vevn/bin/activate
+    source .venv/bin/activate
+    pip install -r requirements.txt
+    ./src/manage.py migrate
+    ./src/manage.py runserver
+    
